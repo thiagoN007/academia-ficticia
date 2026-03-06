@@ -1,0 +1,247 @@
+
+@media screen and (max-width: 768px)  {
+            .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 20;
+        }
+
+        .menu-toggle #hamburguer-menu {
+            display: block;
+            width: 30px;
+            height: 4px;
+            margin: 5px 0;
+            color: #2bf705;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .navBar {
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #fff;
+                padding: 0px 20px;
+                border-radius: 10px;
+                margin-top: 20px;
+                width: 200px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                z-index: 15;
+            }
+
+            .navBar.active {
+                transform: translateX(0);
+            }
+
+        .list-links {
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .list-links li {
+                margin: 10px 0;
+        }
+
+    /*Fim menu */
+
+
+    header {
+    width: 100%;
+    position: fixed;
+    background: #2c2c2b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+    .box-father-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-text-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-text-hero h1 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+.box-text-hero p {
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+span {
+    color: #2bf705;
+}
+
+.redes-sociais {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais i {
+    font-size: 20px;
+}
+
+/*Fim hero*/
+
+
+.sobre {
+    background-color: #fff;
+    padding: 100px 0px;
+}
+
+.father-sobre {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-sobre h1 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2bf705;
+    font-size: 2.5rem;
+}
+
+.p-sobre {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.img-sobre img {
+    width: 400px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+
+}
+
+/*Fim sobre*/
+
+.planos {
+    background-color: #fff;
+    padding: 100px 0px;
+}
+
+.planos .title-planos {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    color: #2bf705;
+}
+
+
+.text-planos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+
+.card-semanal {
+    width: 100%;
+    border: 1px solid #000000;
+    background:rgba(0, 0, 0, 0.8);
+    color: #2bf705;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s ease;
+    border: none;
+    z-index: 1;
+}
+
+.card-mensal {
+    width: 100%;
+    border: 1px solid;
+    background: rgba(0, 0, 0, 0.8);
+    color: #2bf705;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s ease;
+    border: none;
+    z-index: 1;
+}
+
+.card-anual {
+    width: 100%;
+    border: 1px solid;
+    background:rgba(0, 0, 0, 0.8);;
+    color: #2bf705;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s ease;
+    border: none;
+    z-index: 1;
+}
+
+/*Fim planos*/
+
+
+.localizacao {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px 0px;
+}
+
+.localizacao h1 {
+    font-size: 2.5rem;
+}
+
+.title-localizacao {
+    text-align: center;
+    color: #2bf705;
+    margin-bottom: 50px;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h2>Builder academia</h2>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars" id="hamburguer-menu"></i>
+        </div>
+
+        <nav class="navBar">
+
+            <ul class="list-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="Hero">
+
+            <div class="box-father-hero">
+
+                <div class="box-text-hero">
+                    <h1>Builder</h1>
+                    <h1><span>Academia</span></h1>
+                    <p>Treine na melhor academia da cidade!</p>
+                    <div class="redes-sociais">
+                    
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="sobre" id="sobre">
+
+            <div class="father-sobre">
+
+                <div class="text-sobre">
+                    <h1>Sobre Nós</h1>
+                    <p class="p-sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et accusamus iure cum quod
+                        exercitationem ea, explicabo possimus vel veritatis corporis culpa eius soluta cupiditate! Eum
+                        soluta nisi ipsa ipsam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et accusamus iure cum quod
+                        exercitationem ea, explicabo possimus vel veritatis corporis culpa eius soluta cupiditate! Eum
+                        soluta nisi ipsa ipsam.</p>
+                </div>
+
+                <div class="img-sobre">
+                    <img src="assets/sobre.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="planos" id="planos">
+
+            <h1 class="title-planos">Planos acessivéis</h1>
+
+            <div class="father-planos">
+
+                <div class="text-planos">
+
+                    <div class="card-semanal">
+                        <h1>Plano semanal</h1>
+                        <del>De: R$ 20</del>
+                        <h2>Por: R$ 10</h2>
+                    </div>
+
+                    <div class="card-mensal">
+                        <h1>Plano mensal</h1>
+                        <del>De: R$ 50</del>
+                        <h2>Por: R$ 25</h2>
+                    </div>
+
+                    <div class="card-anual">
+                        <h1>Plano anual</h1>
+                        <del>De: R$ 100</del>
+                        <h2>Por: R$ 50</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="localizacao" id="localizacao">
+
+            <h1 class="title-localizacao">Nossa localização</h1>
+
+            <div class="local">
+                <iframe accesskey="11"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63589.19227061878!2d-42.81961613012762!3d-5.0510391395847005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e34b4df8526b1%3A0x2c29cfbdbb7d7359!2sTeresina%20-%20PI!5e0!3m2!1spt-PT!2sbr!4v1772740819179!5m2!1spt-PT!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Builder academia 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navBar = document.querySelector('.navBar');
+        menuToggle.addEventListener('click', function () {
+            navBar.classList.toggle('active');
+        });
+        // Fecha o menu ao clicar em um link
+        document.querySelectorAll('#menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navBar.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
