@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 768px)  {
             .menu-toggle {
             display: none;
@@ -31,14 +30,14 @@
             .navBar {
                 position: absolute;
                 top: 60px;
-                right: 0;
+                right: 10px; /* Corrige o vazamento para dentro da tela */
                 background: #fff;
                 padding: 0px 20px;
                 border-radius: 10px;
                 margin-top: 20px;
-                width: 200px;
+                width: 180px; /* Reduz a largura para evitar vazamento */
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                transform: translateX(100%);
+                transform: translateX(120%); /* Ajusta para fora da tela */
                 transition: transform 0.3s ease;
                 z-index: 15;
             }
