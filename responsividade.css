@@ -59,6 +59,13 @@
     /*Fim menu */
 
 
+    body {
+
+    overflow-x: hidden;
+
+}
+
+
     header {
     width: 100%;
     position: fixed;
