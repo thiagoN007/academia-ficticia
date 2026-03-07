@@ -57,14 +57,6 @@
 
     /*Fim menu */
 
-
-    body {
-
-    overflow-x: hidden;
-
-}
-
-
     header {
     width: 100%;
     position: fixed;
@@ -153,6 +145,7 @@ span {
 
 .img-sobre img {
     width: 400px;
+    padding: 0px 4%;
     border-radius: 20px;
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
@@ -171,6 +164,7 @@ span {
     padding: 50px;
     text-align: center;
     color: #2bf705;
+    font-size: 2rem;
 }
 
 
@@ -181,7 +175,6 @@ span {
     flex-direction: column;
     padding: 0px 20px;
 }
-
 
 .card-semanal {
     width: 100%;
