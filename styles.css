@@ -34,6 +34,23 @@ header {
     box-sizing: border-box;
 }
 
+button {
+    padding: 8px;
+    margin-top: 15px;
+    background: #2bf705;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    border-radius: 20px;
+}
+
+button a{
+    color: #fff;
+}
+
 .logo h2{
     font-size: 1.3rem;
     margin-left: 20px;
@@ -65,13 +82,15 @@ header {
 }
 
 .redes-sociais {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     gap: 20px;
+
 }
 
 .redes-sociais i {
     font-size: 25px;
+    margin-top: 15px;
 }
 
 .box-father-hero {
