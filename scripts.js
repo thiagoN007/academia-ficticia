@@ -13,7 +13,7 @@ document.querySelectorAll(".list-links a").forEach((link) => {
 
 let botao = document.querySelector(".botao-tirar-duvida");
 
-let endereco = "https://academia-ficticia.vercel.app/duvida"; // endpoint do backend
+let endereco = "https://academia-ficticia.vercel.app/api/duvida"; // endpoint do backend
 
 async function tirarduvida() {
   let prompt = document.querySelector(".caixa-texto").value;
