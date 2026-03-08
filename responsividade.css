@@ -278,4 +278,20 @@ footer p {
     gap: 20px;
 }
 
+.text-bot {
+    width:100%;
+    max-width: 370px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border: 1px solid #fff;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
 }

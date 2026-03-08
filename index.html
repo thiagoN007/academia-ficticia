@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-
 <body>
 
     <header>
@@ -232,25 +231,33 @@
 
     </main>
 
+    <div class="bot">
+
+    <div class="text-bot">
+
+        <h4>Tire suas dúvidas com Nossa IA 🤖</h4>
+
+        <textarea placeholder="Tirar dúvidas..." rows="3" class="caixa-texto"></textarea>
+
+        <button class="botao-tirar-duvida">Perguntar!"</button>
+
+        <div class="resultado">
+            <p class="bloco_resposta"></p>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
     <footer>
         <p>Builder academia 2026 - Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        // Menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navBar = document.querySelector('.navBar');
-        menuToggle.addEventListener('click', function () {
-            navBar.classList.toggle('active');
-        });
-        // Fecha o menu ao clicar em um link
-        document.querySelectorAll('#menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navBar.classList.remove('active');
-            });
-        });
-    </script>
 
 </body>
+
+<script src="scripts.js"></script>
 
 </html>

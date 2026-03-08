@@ -367,3 +367,80 @@ span {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
+
+.btn-zap-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 200;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.btn-zap-fixo:hover {
+    transform: scale(1.1);
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+}
+
+.text-bot {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border: 1px solid #fff;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.text-bot h4 {
+    color: #2bf705;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.text-bot input {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.caixa-texto {
+    resize: none;
+    width: 100%;
+    max-width: 640px;
+    padding: 16px;
+    border: 1px solid #2bf705;
+    border-radius: 10px;
+    background: #141419;
+    color: #fafafa ;
+    outline: none;
+}
+
+.resultado {
+    max-width: 640px;
+    width: 100%;
+}
+
+.bloco_resposta {
+    margin-top: 10px;
+    color: #fff;
+    overflow: auto;
+}
+
+.botao-tirar-duvida {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
