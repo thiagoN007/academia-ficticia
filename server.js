@@ -11,16 +11,17 @@ app.post('/duvida', async (req, res) => {
   const prompt = req.body.prompt;
   const chave_api = process.env.CHAVE_API; // coloque sua chave no .env
 
-  const resposta = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json',
-      'Authorization': `Bearer ${chave_api}`,
-    },
-    body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
-      messages: [
-        { role: 'system', content: `
+  try {
+    const resposta = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': `Bearer ${chave_api}`,
+      },
+      body: JSON.stringify({
+        model: 'llama-3.3-70b-versatile',
+        messages: [
+          { role: 'system', content: `
             Você é um assistente virtual da Builder Academia. Seu objetivo é responder dúvidas de forma clara, educada e rápida para pessoas interessadas na academia.
 
 Sempre responda em português simples e de forma objetiva.
@@ -75,15 +76,20 @@ Sempre se apresente como:
 "Assistente da Builder Academia".
         
             ` },
-        { role: 'user', content: prompt }
-      ]
-    })
-  });
-
-  const dados = await resposta.json();
-  res.json({ resposta: dados.choices[0].message.content });
+          { role: 'user', content: prompt }
+        ]
+      })
+    });
+    const dados = await resposta.json();
+    if (dados.choices && dados.choices[0] && dados.choices[0].message) {
+      res.json({ resposta: dados.choices[0].message.content });
+    } else {
+      res.status(500).json({ resposta: 'Desculpe, não consegui obter uma resposta da IA. Tente novamente mais tarde.' });
+    }
+  } catch (e) {
+    res.status(500).json({ resposta: 'Erro ao conectar com a IA: ' + e.message });
+  }
 });
 
-app.listen(3000, () => {
-  console.log('Backend rodando em http://localhost:3000');
-});
+// Exportar o app para Vercel
+module.exports = app;

@@ -25,6 +25,7 @@ async function tirarduvida() {
   }
 
   document.querySelector(".caixa-texto").value = "";
+  bloco_resposta.textContent = "Aguarde...";
 
   try {
     const resposta = await fetch(endereco, {
@@ -34,10 +35,14 @@ async function tirarduvida() {
       },
       body: JSON.stringify({ prompt }),
     });
+    if (!resposta.ok) {
+      bloco_resposta.textContent = `Erro: ${resposta.status} - ${resposta.statusText}`;
+      return;
+    }
     const dados = await resposta.json();
     bloco_resposta.textContent = dados.resposta || "Não foi possível obter resposta.";
   } catch (e) {
-    bloco_resposta.textContent = "Erro ao conectar com o bot.";
+    bloco_resposta.textContent = `Erro ao conectar com o bot: ${e.message}`;
   }
 }
 
